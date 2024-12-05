@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado Maldito!</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("meat");
+        if (x.style.display === "block") {
+            x.style.display = "none";   
+        }
+            else {
+                x.style.display = "block";
+            }
+    }
+    </script>
+
+    <script src="https://kit.fontawesome.com/1c30d040b9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#noticias"><i class="fab fa-stack-exchange"></i> Notícias</a></li>
+
+                    <!--Menu Hamburger "Àrea do DM"-->
+                <div class="burger">
+                    <a href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-scroll"></i> Área do DM</a>
+
+                    <div id="meat">
+                        <a href="#homebrews">homebrews</a>
+                        <a href="#hm">Homebrews <br> Malditos</a>
+                        <a href="#musicas">Músicas</a>
+                    </div>
+                </div>
+                    <!--Fim do Menu Hamburger-->
+
+                <li><a href="#campanha"><i class="fas fa-dice-d20" id="dado"></i> Campanha!</a></li>
+            </ul>
+        </nav>
+   
+        <div class="p1">
+            <img class="fundo" src="_imagens/dm.png" alt="Mestre ao fundo">
+            <img class="logo" src="_imagens/logo.png" alt="logo Dado maldito, um dado com apenas valores de 1">
+            <h1 class="principal">Dado Maldito!</h1>
+        </div>
+    </header> 
+
+    <div class="vitrine">
+
+        <div class="grid">
+            <div class="txt">
+                <a href="#conteudo-1">
+                    <h1>Adicionando realismo à sua Campanha</h1>
+                </a>
+                <p>Veja aqui regras do Homebrew "Masmorras Cruéis" para deixar sua campanha realista e dinâmica, com as regras aleternativas de Inventário, Durabilidade de Item, e de Atividades de Descanso.</p>
+            </div>
+
+            <figure>
+                <img src="_imagens/masmorra.jpg" alt="Capa de Masmorras Cruéis - Aventureiros surpresos entrando numa masmorra"> 
+            </figure>
+        </div>
+
+    </div>   
+
+    <div class="grid">
+
+        <div class="cube" style=margin-left:10em;>
+            <img src="_imagens/masmorra.jpg" alt="">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi earum ut veniam, placeat quod at nam maxime ab dolor asperiores labore exercitationem deserunt pariatur officia aliquid, rem beatae quam.</p>
+
+        </div>
+
+        <div class="cube" style=margin-right:10em;>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quas itaque laborum vel sapiente quod, nihil dolorum natus est consequuntur officiis architecto esse nemo soluta a porro explicabo reiciendis iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi earum ut veniam, placeat quod at nam maxime ab dolor asperiores labore exercitationem deserunt pariatur officia aliquid, rem beatae quam.</p>
+        </div>
+
+    </div>
+   
+
+</body>
+</html>
