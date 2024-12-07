@@ -5,88 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dado Maldito!</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-
-    <script>
-    function myFunction() {
-        var x = document.getElementById("meat");
-        if (x.style.display === "block") {
-            x.style.display = "none";   
-        }
-            else {
-                x.style.display = "block";
-            }
-    }
-    </script>
-
-    <script src="https://kit.fontawesome.com/1c30d040b9.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
-                <li><a href="#noticias"><i class="fab fa-stack-exchange"></i> Notícias</a></li>
-
-                    <!--Menu Hamburger "Àrea do DM"-->
-                <div class="burger">
-                    <a href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-scroll"></i> Área do DM</a>
-
-                    <div id="meat">
-                        <a href="#homebrews">homebrews</a>
-                        <a href="#hm">Homebrews <br> Malditos</a>
-                        <a href="#musicas">Músicas</a>
-                    </div>
-                </div>
-                    <!--Fim do Menu Hamburger-->
-
-                <li><a href="#campanha"><i class="fas fa-dice-d20" id="dado"></i> Campanha!</a></li>
-            </ul>
-        </nav>
-   
-        <div class="p1">
-            <img class="fundo" src="_imagens/dm.png" alt="Mestre ao fundo">
-            <img class="logo" src="_imagens/logo.png" alt="logo Dado maldito, um dado com apenas valores de 1">
-            <h1 class="principal">Dado Maldito!</h1>
-        </div>
-    </header> 
-
-    <div class="vitrine">
-
-        <div class="grid">
-            <div class="txt">
-                <a href="#conteudo-1">
-                    <h1>Adicionando realismo à sua Campanha</h1>
-                </a>
-                <p>Veja aqui regras do Homebrew "Masmorras Cruéis" para deixar sua campanha realista e dinâmica, com as regras aleternativas de Inventário, Durabilidade de Item, e de Atividades de Descanso.</p>
-            </div>
-
-            <figure>
-                <img src="_imagens/masmorra.jpg" alt="Capa de Masmorras Cruéis - Aventureiros surpresos entrando numa masmorra"> 
-            </figure>
-        </div>
-
-    </div>   
-
-    <div class="grid">
-
-        <div class="cube" style=margin-left:10em;>
-            <img src="_imagens/masmorra.jpg" alt="">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi earum ut veniam, placeat quod at nam maxime ab dolor asperiores labore exercitationem deserunt pariatur officia aliquid, rem beatae quam.</p>
-
-        </div>
-
-        <div class="cube" style=margin-right:10em;>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quas itaque laborum vel sapiente quod, nihil dolorum natus est consequuntur officiis architecto esse nemo soluta a porro explicabo reiciendis iure.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi earum ut veniam, placeat quod at nam maxime ab dolor asperiores labore exercitationem deserunt pariatur officia aliquid, rem beatae quam.</p>
-        </div>
-
+<nav>
+    <div class="LogoNav">
+        <img src="_imagens/logo 500x500.png" class="Logo">
     </div>
-   
+
+    <ul class="Navbar">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#Servicos">Serviços</a></li>
+        <li><a href="#Contato">Produtos</a></li>
+        <li><a href="#Campanha">Campanha</a></li>
+    </ul>
+    
+</nav>
+
+<div class="BoasVindas" id="Home">
+    <img src="_imagens/dm 800x800.png" alt="Dungeon Master - Silhueta de uma figura humanoide de capuz com um sorriso maligno">
+    <img src="_imagens/logo 500x500.png" alt="Dado Maldito - Um dado com todas as faces valendo 1">
+    <h1 class="TituloBoasVindas">Dado Maldito!</h1>
+    <h2 class="Slogan">Onde os desafios começam!</h2>
+
+    <!-- Evento JS que revelará o restante da página ao clicar-->
+    <button><img src="_imagens/logo 500x500.png" class="Logo"></button> 
+    <p>Role o dado para começar a Aventura</p> 
+</div>
+
+<main id="Sobre">
+    <section>
+    <h1>A Ordem do Dado Maldito: Tecendo Destinos e Moldando Regras</h1>
+    <p>Nas brumas do tempo, quando as primeiras histórias começaram a ser contadas ao redor das fogueiras, surgiu uma ordem de visionários: Os Mestres do Dado Maldito. Não eram apenas contadores de histórias, mas tecelões do destino, arquitetos de mundos e forjadores de lendas. Com suas mentes inquietas e corações audazes, eles não se limitavam às regras gravadas em tomos antigos. Ao contrário, esculpiam o RPG como um artífice lapida uma joia bruta, transformando o jogo em algo único, vivo e vibrante.</p>
+
+    <h2>Quem Somos?</h2>
+    <p>Somos mestres que não temem questionar o que está escrito. Acreditamos que o RPG é mais do que um conjunto de regras; é uma experiência moldada pela criatividade e pela vontade de criar algo verdadeiramente épico. Adaptamos sistemas, reinventamos mecânicas e simplificamos o que for preciso para que o foco esteja onde realmente importa: na diversão, na narrativa e na magia de viver aventuras inesquecíveis.</p>
+
+    <h2>O que Fazemos?</h2>
+    <p>Criamos Regras Personalizadas: Para quem busca fluidez e dinamismo, oferecemos ideias e sistemas que se ajustam a qualquer mesa.
+    Fornecemos Materiais Únicos: Desde mapas encantadores a personagens intrigantes, temos tudo para enriquecer os mundos que você constrói.
+    Facilitamos o Trabalho dos Mestres: Oferecemos ferramentas, tabelas e dicas para que narrar seja menos uma tarefa e mais um prazer.
+    Inspiramos Histórias: Compartilhamos ganchos narrativos e ideias inovadoras para despertar a imaginação e conduzir jogadores por jornadas épicas.</p>
+    
+    <h2>Nossa Filosofia</h2>
+    <p>Acreditamos que cada mesa é única e que a verdadeira essência do RPG está na liberdade de criar. Por isso, nosso objetivo é oferecer suporte aos mestres para que possam construir aventuras que desafiem os limites da imaginação e inspirem seus jogadores a embarcar em jornadas extraordinárias.
+        
+    Com o Dado Maldito em mãos, não há limites para o que podemos alcançar. Somos os moldadores de mundos, os desafiadores do destino e os guias de histórias inesquecíveis.
+        
+    Prepare-se, aventureiro. A lenda começa na sua próxima jogada.</p>
+
+    </section>
+</main>
+
+    <section id="Servicos"> <!-- Será uma Galeria, que ao clicar abre uma tela popup com a descrição e link para download dos arquivos-->
+        
+        <h1>Serviços</h1>
+        <ul>
+            <li>Database de Mundo</li>
+            <li>Controle de Seção do DM</li>
+            <li>Background Poderoso</li>
+            <li>Customização de Ficha</li>
+        </ul>
+
+    </section>
+
+    <section id="Contato">
+
+        <h1>Contato</h1>
+        <h2>Contatos Dado Maldito!</h1>
+        <ul>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>TikTok</li>
+        </ul>
+        <h2>Contato Pessoal</h1>
+            <ul>
+                <li>LinkedIN</li>
+                <li>Github</li>
+                <li>Instagram</li>
+            </ul>
+    </section>
+
+    <section id="Campanha">
+
+        <h1>Sangue no Gelo: A Odisseia dos Quatro Escolhidos</h1>
+        <p>
+            Nos confins gelados do Ártico de Galare, onde o vento corta como lâminas e o céu é um espelho das tormentas da alma, o destino urdiu sua trama mais cruel. Há gerações, o continente sofre sob o jugo de um dos dois males ancestrais, forças tão antigas quanto as montanhas e tão implacáveis quanto as marés. No extremo norte, o gelo eterno é a morada da Rainha de Gelo, uma entidade de poder absoluto, cuja frieza não apenas congela terras, mas também os corações dos que ousam enfrentá-la.
+            Contudo, a esperança renasce. Quatro almas marcadas pelo destino, escolhidas pelas forças ocultas do mundo, devem agora trilhar um caminho de provações e sacrifícios. Cada um deles é uma peça do enigma, um fragmento de poder que, unido, pode eliminar o primeiro dos grandes males.
+            A jornada, porém, é árdua. As tempestades não são apenas de neve; são tempestades de dúvida, medo e conflito. Os perigos não habitam apenas o gelo; eles espreitam nas sombras, nos corações corrompidos, nos juramentos esquecidos.
+            O mundo observa, silencioso, enquanto os escolhidos marcham para o norte, onde o trono gélido da Rainha aguarda. Sangue será derramado. Escolhas serão feitas. E, no fim, as terras de Galare podem renascer... ou cair para sempre no abraço da eternidade gelada.
+            O gelo sussurra... o sangue clama... e <a href="SangueNoGelo.html">a missão começa.</a>
+        </p>
+    </section>
+
 
 </body>
 </html>
