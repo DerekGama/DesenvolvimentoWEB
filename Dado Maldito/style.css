@@ -100,9 +100,10 @@ color: var(--FundoDado);
     position: relative;
     object-fit: cover;
     object-position: center; 
-    height: 95vh;
+    height: 100%;
     width: 100%;
     opacity: 25%;
+    transform: translateY(-500px);
     animation: BoasVindasDm linear 10s infinite;
 }
 
@@ -116,6 +117,22 @@ color: var(--FundoDado);
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+.BoasVindasTitulo{
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--FundoDado);
+    position: absolute;
+    text-align: center;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BoasVindasTitulo h1{
+    font-size: 81pt;
 }
 
 
