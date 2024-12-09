@@ -1,0 +1,139 @@
+    /*Responsividade*/
+        /*Mobile*/
+
+@media screen {
+
+}
+
+        /*Mobile*/
+    /*Responsividade*/
+        
+:root{
+    --CorPrincDado: #BF040D;
+    --CorPrincDadoClaro: #E30510;
+    --CorPincDadoEscuro: #5c0705;
+    --FundoDado: #f6f6f6;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+/* Container Menu Navegação  */
+nav{
+    height: 80px;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: var(--FundoDado);
+}
+
+    /*Logo Menu Navegação*/
+.LogoNav {
+    display: flex;
+    align-items: center;
+  }
+
+.LogoNav a{
+text-decoration: none;
+width: 80px;
+height: auto;
+}
+
+.LogoNav img{
+width: inherit;
+height: inherit;
+filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+transition: transform 0.3s ease-in, filter 0.3s ease-in;
+}
+
+.LogoNav img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}  
+    /*Barra de Links Navegação*/
+.Navbar {
+display: flex;
+list-style: none; 
+margin: 0; 
+padding: 0; 
+gap: 15px; 
+}
+
+.Navbar a{
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+text-decoration: none;
+color: var(--CorPrincDadoClaro);
+padding: 20px;
+transition: color 0.4s ease-in, background-color 0.4s ease-in;
+}
+
+.Navbar a:hover{
+background-color: var(--CorPrincDadoClaro);
+color: var(--FundoDado);
+}
+    /*Barra de Links Navegação*/
+/* Container Menu Navegação  */
+
+/*Boas Vindas*/
+
+.BoasVindas{
+    background-image: linear-gradient(to bottom, var(--CorPincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
+    background-size: 200% 200%;
+    animation:BoasVindasDegrade ease 10s infinite;
+    
+}
+
+.DmFundo{
+    position: relative;
+    object-fit: cover;
+    object-position: center; 
+    height: 95vh;
+    width: 100%;
+    opacity: 25%;
+    animation: BoasVindasDm linear 10s infinite;
+}
+
+.DadoBoasVindas{
+    position: absolute;
+    object-position: center;
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+/*Boas Vindas*/
+
+/*Animações*/
+@keyframes BoasVindasDegrade {
+    0% {background-position: 0% 50%;}
+    25% {background-position: 50% 100%;}
+    50% {background-position: 0% 50%;}
+    75% {background-position: 50% 100%;}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes BoasVindasDm {
+    0% {opacity:10%;}
+    25% {opacity:25%;}
+    50% {opacity:50%;}
+    75% {opacity:25%;}
+    100% {opacity:10%;}
+}
