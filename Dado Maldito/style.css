@@ -229,7 +229,15 @@ color: var(--FundoDado);
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
+    background: url(_imagens/textura\ pergaminho.png);
+    background-size: cover;
+}
+
+.TextoSobre{
+    padding: 20px;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -252,8 +260,8 @@ color: var(--FundoDado);
     border-radius: 8px;
 }
 
-.grid-section .quem-somos,
-.grid-section .o-que-fazemos {
+.grid-section .QuemSomos,
+.grid-section .OQuefazemos {
     display: flex;
     flex-direction: column;
 }
