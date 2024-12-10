@@ -107,7 +107,7 @@ color: var(--FundoDado);
     animation: BoasVindasDm linear 10s infinite;
 }
 
-.DadoBoasVindas{
+.BoasVindasDado{
     position: absolute;
     object-position: center;
     width: 600px;
@@ -135,6 +135,91 @@ color: var(--FundoDado);
     font-size: 81pt;
 }
 
+.BoasVindasTitulo h2{
+    font-size: 31pt;
+}
+
+    /*Container do Boatão Rolagem*/
+
+        /*Balão de Fala*/
+.Rolagem p{
+    position: absolute;
+    text-align: center;
+    display: inline-block; 
+    top: 147%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    
+    background-color: var(--FundoDado); 
+    border: 2px solid #000; 
+    border-radius: 10px;
+    padding: 10px 20px; 
+    max-width: 300px; 
+
+    opacity: 0%;
+    animation: BalaoRolagem linear 3s 1 5s forwards;
+    box-shadow: 3px 15px 25px rgba(0, 0, 0, 0.3)
+}
+
+.Rolagem p::after { /*Seta do Balão de Fala*/
+    content: ""; /* Elemento vazio para a seta */
+    position: absolute;
+    bottom: -30px; 
+    left: 260px; 
+    width: 0; 
+    height: 0; 
+    border-width: 15px; 
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent; 
+    z-index: 1;
+  }
+  
+  .Rolagem p::before { /*Borda da Seta do Balão de Fala*/
+    content: ""; 
+    position: absolute;
+    bottom: -35px; 
+    left: 258px; 
+    width: 0;
+    height: 0;
+    border-width: 17px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent; 
+    z-index: 0;
+  }
+        /*Balão de Fala*/
+
+.Rolagem button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Rolagem img{
+    width: 200px;
+    height: auto;
+    animation: RolagemDadoBalancar 3s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+.Rolagem img:hover{
+    animation: RolagemDadoSaltitar 1.5s ease-in-out infinite;
+}
+
+    /*Container do Boatão Rolagem*/
 
 /*Boas Vindas*/
 
@@ -153,4 +238,25 @@ color: var(--FundoDado);
     50% {opacity:50%;}
     75% {opacity:25%;}
     100% {opacity:10%;}
+}
+
+@keyframes BalaoRolagem{
+    0% {opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes RolagemDadoSaltitar {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-20px);}
+    50% {transform: translateY(0);}
+    75% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes RolagemDadoBalancar {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
 }
