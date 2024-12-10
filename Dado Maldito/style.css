@@ -93,7 +93,6 @@ color: var(--FundoDado);
     background-image: linear-gradient(to bottom, var(--CorPincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
     background-size: 200% 200%;
     animation:BoasVindasDegrade ease 10s infinite;
-    
 }
 
 .DmFundo{
@@ -222,6 +221,58 @@ color: var(--FundoDado);
     /*Container do Boatão Rolagem*/
 
 /*Boas Vindas*/
+
+/*Sobre*/
+
+#Sobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#Sobre h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-section div {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.grid-section .quem-somos,
+.grid-section .o-que-fazemos {
+    display: flex;
+    flex-direction: column;
+}
+
+#Sobre h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#Sobre p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/*Sobre*/
 
 /*Animações*/
 @keyframes BoasVindasDegrade {
