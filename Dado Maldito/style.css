@@ -96,6 +96,7 @@ color: var(--FundoDado);
     background-image: linear-gradient(to bottom, var(--CorPincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
     background-size: 200% 200%;
     animation:BoasVindasDegrade ease 10s infinite;
+    max-height: 170vh;
 }
 
 .DmFundo{
@@ -233,8 +234,8 @@ color: var(--FundoDado);
     gap: 20px;
     padding: 20px;
     width: 90%;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #1e1e2e, #37364f), url(_imagens/textura\ pergaminho.png);
+    margin: 50px auto;
+    background: linear-gradient(135deg, #2d2d46f1, #37364ff1), url(_imagens/textura\ pergaminho.png);
     background-size:cover;
     background-position: 500%;
     background-blend-mode: multiply;
@@ -246,7 +247,7 @@ color: var(--FundoDado);
 .TextoSobre{
     padding: 20px;
     width: 65%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .grid-section {
