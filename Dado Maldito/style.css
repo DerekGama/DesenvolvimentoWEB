@@ -1,6 +1,5 @@
     /*Responsividade*/
         /*Mobile*/
-
 @media screen {
 
 }
@@ -91,7 +90,6 @@ color: var(--FundoDado);
 /* Container Menu Navegação  */
 
 /*Boas Vindas*/
-
 .BoasVindas{
     background-image: linear-gradient(to bottom, var(--CorPincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
     background-size: 200% 200%;
@@ -227,7 +225,6 @@ color: var(--FundoDado);
 /*Boas Vindas*/
 
 /*Sobre*/
-
 #Sobre {
     display: grid;
     grid-template-columns: 1fr;
