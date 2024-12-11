@@ -13,6 +13,8 @@
     --CorPrincDadoClaro: #E30510;
     --CorPincDadoEscuro: #5c0705;
     --FundoDado: #f6f6f6;
+    --ComplementarEscuro: #09375c;
+    --ComplementarClaro: #0861a8;
 }
 
 
@@ -22,6 +24,7 @@ body{
     padding: 0;
     padding-top: 80px;
     box-sizing: border-box;
+    background-color: var(--ComplementarEscuro);
 }
 
 /* Container Menu Navegação  */
@@ -231,21 +234,19 @@ color: var(--FundoDado);
     padding: 20px;
     width: 90%;
     margin: 0 auto;
-    background: url(https://www.freepik.com/free-psd/old-paper-scroll-ancient-papyrus-isolated-background_49177466.htm?log-in=google#fromView=keyword&page=1&position=1&uuid=f2199c51-b681-4b14-96c0-8d21fb0b6fb3);
-    background-size: cover;
+    background: linear-gradient(135deg, #1e1e2e, #37364f), url(_imagens/textura\ pergaminho.png);
+    background-size:cover;
+    background-position: 500%;
+    background-blend-mode: multiply;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #e0e0e0;
 }
 
 .TextoSobre{
     padding: 20px;
     width: 65%;
     margin: 0 auto;
-}
-
-#Sobre h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .grid-section {
@@ -258,6 +259,18 @@ color: var(--FundoDado);
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 8px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-section div:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .grid-section .QuemSomos,
@@ -266,11 +279,29 @@ color: var(--FundoDado);
     flex-direction: column;
 }
 
+#Sobre h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #Sobre h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+#Sobre h1, #Sobre h2 {
+    text-shadow: 0 0 10px #ffbf00, 0 0 20px #ffbf00;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#Sobre h1:hover, #Sobre h2:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #ffbf00, 0 0 30px #ffbf00;
 }
 
 #Sobre p {
@@ -278,7 +309,6 @@ color: var(--FundoDado);
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
 
 /*Sobre*/
 
