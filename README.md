@@ -58,6 +58,7 @@ Remake de uma Landing Page criada para o TCC do curso de Informática Avançada.
 - **HTML5**: Para a estruturação semântica do site.
 - **CSS3**: Para estilização e animações.
 - **JavaScript**: Para interatividade e efeitos dinâmicos.
+- **Leonardo.ai**: Para a criação de algumas imagens.
 
 ---
 
