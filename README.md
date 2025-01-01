@@ -64,5 +64,5 @@ Remake de uma Landing Page criada para o TCC do curso de Informática Avançada.
 
 ## 📌 Como Executar o Projeto
 1. Clone este repositório:
-   ```bash https://github.com/DerekGama/DesenvolvimentoWEB
-   git clone
+   ```bash
+   git clone https://github.com/DerekGama/DesenvolvimentoWEB
