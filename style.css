@@ -10,7 +10,7 @@
 :root{
     --CorPrincDado: #BF040D;
     --CorPrincDadoClaro: #E30510;
-    --CorPincDadoEscuro: #5c0705;
+    --CorPrincDadoEscuro: #5c0705;
     --FundoDado: #f6f6f6;
     --ComplementarEscuro: #09375c;
     --ComplementarClaro: #0861a8;
@@ -91,7 +91,7 @@ color: var(--FundoDado);
 
 /*Boas Vindas*/
 .BoasVindas{
-    background-image: linear-gradient(to bottom, var(--CorPincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
+    background-image: linear-gradient(to bottom, var(--CorPrincDadoEscuro) 33.3%, var(--CorPrincDadoClaro) 66.6%, var(--CorPrincDado) 100%);
     background-size: 200% 200%;
     animation:BoasVindasDegrade ease 10s infinite;
     max-height: 170vh;

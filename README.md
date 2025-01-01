@@ -50,7 +50,7 @@ Remake de uma Landing Page criada para o TCC do curso de Informática Avançada.
 - [ ] Estilizar seção "Contato".
 - [ ] Finalizar os estilos da seção "Campanha".
 - [ ] Criar a página de Atribuição.
-- [ ] Estilizar a página de Atribuição.
+- [x] Estilizar a página de Atribuição.
 
 ---
 
@@ -64,5 +64,5 @@ Remake de uma Landing Page criada para o TCC do curso de Informática Avançada.
 
 ## 📌 Como Executar o Projeto
 1. Clone este repositório:
-   ```bash
+   ```bash https://github.com/DerekGama/DesenvolvimentoWEB
    git clone
